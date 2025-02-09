@@ -1,0 +1,161 @@
+/* Chatbot Container */
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: #121212; /* Dark mode background */
+  color: #e0e0e0;
+}
+
+/* Chat & Data Container */
+.chat-and-data-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Chat Window */
+.chat-window {
+  width: 30%;
+  padding: 15px;
+  overflow-y: auto;
+  background: #1e1e1e;
+  border-right: 2px solid #333;
+}
+
+/* Chat Messages */
+.chat-message {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  max-width: 75%;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* User Messages */
+.chat-message.user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  color: #fff;
+  text-align: right;
+  border-top-right-radius: 0;
+  box-shadow: 2px 2px 10px rgba(0, 255, 0, 0.2);
+}
+
+/* Bot Messages */
+.chat-message.bot {
+  align-self: flex-start;
+  background: #262626;
+  border: 1px solid #444;
+  color: #ddd;
+  border-top-left-radius: 0;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Right Response (Results) */
+.right-response {
+  width: 70%;
+  padding: 15px;
+  background: #181818;
+  overflow-y: auto;
+  border-left: 2px solid #333;
+}
+
+/* Beautified Response */
+.right-response pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+  background: #222;
+  border-radius: 8px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Movie Table */
+.right-response table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #222;
+}
+
+.right-response th,
+.right-response td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+  color: #ddd;
+}
+
+/* Loader */
+.loader {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  color: #00c853;
+}
+
+/* Chat Input Bar */
+.chat-input {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: #121212;
+  border-top: 2px solid #333;
+}
+
+/* Input Field */
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Send Button */
+.chat-input button {
+  margin-left: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #ff4081, #ff80ab);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(255, 64, 129, 0.3);
+}
+
+/* Hover Effect */
+.chat-input button:hover {
+  background: linear-gradient(135deg, #f50057, #ff4081);
+  box-shadow: 2px 2px 12px rgba(255, 64, 129, 0.5);
+}
+
+/* Movie Cards */
+.movie-card {
+  background: #242424;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.movie-card h3 {
+  color: #ff80ab;
+}
+
+.movie-card p {
+  color: #ccc;
+}
